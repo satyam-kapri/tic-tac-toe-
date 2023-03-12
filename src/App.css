@@ -1,0 +1,290 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+:root{
+  --firstcolor:rgba(221, 231, 245, 0.592);
+
+}
+@font-face {
+  font-family: "Thorn";   
+  src: url("./fonts/Thorn-4Bn19.ttf") format("truetype");
+  font-weight: bold; 
+}
+body{
+  background-image: url('images/jungle.avif');
+   background-size: cover;background-position: 0px -130px;
+  transition:background-image 1s;}
+  .woodenblock{
+    width: 50%;
+    top: -51px;
+    position: absolute;
+    
+  }
+.changetheme{
+  width: 71%;
+    left: 9%;
+    height: 20%;
+    position: fixed;
+    top: 41%;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: 'Thorn';
+    cursor: pointer;
+}
+  .result p{
+    position: relative;
+    font-family: "Thorn";
+    color: white;
+    font-size: 63px;
+    top:-22px;
+
+
+  }
+.result{
+  position: fixed;
+    left: 24%;
+    top: 0px;
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  /* background: black; */
+  width:500px;
+  height:300px;
+  grid-gap: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  position: absolute;
+  left:30%;
+  top:30%;
+  transition: 0.3s;
+}
+
+.griditems{
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;align-items: center;justify-content: center;
+  height: 100px;
+  box-shadow: 1px 1px 12px;
+  backdrop-filter: blur(5px) saturate(160%);
+  background: rgba(221, 231, 245, 0.592);
+  cursor: pointer;
+}
+.griditems img{
+  height:72px;width:75px;
+}
+
+.griditems:nth-child(1){
+animation: movinglight 0.2s  0.2s infinite alternate;animation-play-state: paused;}
+.griditems:nth-child(2){
+animation: movinglight 0.2s  0.3s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(3){
+animation: movinglight 0.2s  0.4s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(4){
+animation: movinglight 0.2s  0.5s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(5){
+animation: movinglight 0.2s  0.6s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(6){
+animation: movinglight 0.2s  0.5s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(7){
+animation: movinglight 0.2s  0.4s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(8){
+animation: movinglight 0.2s  0.3s infinite alternate;animation-play-state: paused;
+}
+.griditems:nth-child(9){
+animation: movinglight 0.2s  0.2s infinite alternate;animation-play-state: paused;
+}
+
+@keyframes movinglight {
+ from{background:rgba(221, 231, 245, 0.592) ;}
+  to{background: var(--firstcolor);
+  }
+  
+}
+.tellmove{
+  background: url('images/tellmovesign.png');
+  width: 20%;
+  height: 54%;
+  position: fixed;
+  background-size: cover;
+  bottom: -46px;
+  left: 2%;
+  filter: drop-shadow(5px 5px 10px #000);
+
+}
+.tellmove p{
+  color: white;
+  font-family: Thorn;
+  font-size: 34px;
+  position: absolute;
+  top: 16%;
+  left: 30%;
+  text-align: center;
+}
+.tellmove img{
+  height: 66px;
+  width: 70px;
+  position: absolute;
+  top: -23px;
+
+}
+.instructionwood{
+  background: url('images/instructionwood.png');
+  filter: drop-shadow(5px 5px 10px #000);
+    position: absolute;
+    right: 9px;
+    height: 77%;
+    background-size: cover;
+    width: 27%;
+    bottom: -75px;
+
+}
+.instructionwood div{
+  display: flex;
+  
+  align-items: center;
+  position: relative;
+    left: 17%;
+    top: 75px;
+    font-family: Thorn;
+    color: black;
+font-size: 30px;
+}
+.instructionwood img{
+  height:72px;width:75px;
+}
+.buttonwood{
+  background: url('images/routerwood.png');
+  position: fixed;
+    width: 30%;
+    height: 38%;
+    background-size: cover;
+    left: -9px;
+    top: -11px;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+.buttonwood .resetgame{
+  font-size: 25px;
+    border: none;
+    height: 4rem;
+    position: absolute;
+    top: 70%;
+    outline: none;
+    background: transparent;
+    color:black;
+    font-family: 'THORN';
+    left: 50%;
+    width: 7.5rem;
+    cursor: pointer;
+}
+ .resetgame:active,.resetscoreboard:active,.changetheme:active{
+  transform: scale(0.7);
+}
+/* .showwinnings{
+  position: absolute;
+  top:0;
+  font-size: 30px;
+  color: black;
+  font-family: Thorn;
+  top: 32%;
+    left: 13%;
+} */
+.resetscoreboard{
+  font-size: 25px;
+  border: none;
+  height: 4rem;
+  position: absolute;
+  top: 70%;
+  outline: none;
+  background: transparent;
+  color:black;
+  font-family: 'THORN';
+  left: 9%;
+  width: 7.5rem;
+  cursor: pointer;
+}
+.scoreboard{
+  font-size: 30px;
+  color: black;
+  font-family: Thorn;
+}
+@media  screen and (max-width:400px) {
+  body{background-repeat: no-repeat;
+    background-size: auto;background-position-x: 43%;}
+  .tellmove{width: 49%;
+    height: 35%;
+    position: fixed;
+    bottom: -49px;
+    left: -5%;}
+  .grid{left:0%;top:51%;}
+  .instructionwood{height: 33%;
+    width: 38%;
+    bottom: -57px;
+    position: fixed;}
+    .buttonwood{width: 65%;
+      height: 21%;
+      left: -9px;
+      top: 135px;}
+      .result{
+        width: 64%;
+        left: 17%;
+      }
+      .result p{font-size: 3rem;}
+      .woodenblock{width:72%;top: -38px;}
+      .instructionwood div{top: 24px;font-size: 1.4rem;}
+      .instructionwood img {
+        height: 48px;
+        width: 52px;
+    }
+    .resetscoreboard{font-size: 21px;left: 7%;}
+}
