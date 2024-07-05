@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tic-tac-toe-/static/css/main.43b2e622.css",
-    "main.js": "/tic-tac-toe-/static/js/main.b857c905.js",
+    "main.css": "/tic-tac-toe-/static/css/main.7b9fcdd5.css",
+    "main.js": "/tic-tac-toe-/static/js/main.5a409b48.js",
     "static/js/787.3bf0dcc2.chunk.js": "/tic-tac-toe-/static/js/787.3bf0dcc2.chunk.js",
     "static/media/Thorn-4Bn19.ttf": "/tic-tac-toe-/static/media/Thorn-4Bn19.af3e97388f79fc91df29.ttf",
     "static/media/mixkit-ethereal-fairy-win-sound-2019.wav": "/tic-tac-toe-/static/media/mixkit-ethereal-fairy-win-sound-2019.abeb47073e87976cdb18.wav",
@@ -14,12 +14,12 @@
     "static/media/tellmovesign.png": "/tic-tac-toe-/static/media/tellmovesign.2b5037c8bb9d161fdb00.png",
     "static/media/apple-PhotoRoom.png-PhotoRoom.png": "/tic-tac-toe-/static/media/apple-PhotoRoom.png-PhotoRoom.d59e40f891cc0b113de3.png",
     "index.html": "/tic-tac-toe-/index.html",
-    "main.43b2e622.css.map": "/tic-tac-toe-/static/css/main.43b2e622.css.map",
-    "main.b857c905.js.map": "/tic-tac-toe-/static/js/main.b857c905.js.map",
+    "main.7b9fcdd5.css.map": "/tic-tac-toe-/static/css/main.7b9fcdd5.css.map",
+    "main.5a409b48.js.map": "/tic-tac-toe-/static/js/main.5a409b48.js.map",
     "787.3bf0dcc2.chunk.js.map": "/tic-tac-toe-/static/js/787.3bf0dcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43b2e622.css",
-    "static/js/main.b857c905.js"
+    "static/css/main.7b9fcdd5.css",
+    "static/js/main.5a409b48.js"
   ]
 }
