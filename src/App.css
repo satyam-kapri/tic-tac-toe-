@@ -258,7 +258,7 @@ font-size: 30px;
   color: black;
   font-family: Thorn;
 }
-@media  screen and (max-width:400px) {
+@media  screen and (max-width:500px) {
   body{background-repeat: no-repeat;
     background-size: auto;background-position-x: 43%;}
   .tellmove{width: 49%;
