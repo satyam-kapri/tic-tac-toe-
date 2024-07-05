@@ -221,7 +221,7 @@ function changetheme(){
     
     <Buttonwood wincountA={wincountA} wincountB={wincountB} reset={()=>reset()} resetscoreboard={()=>resetscoreboard()} result={result} changetheme={()=>changetheme()}/>
     
-    {/* <div className='tellmove'><p>{A_turn!==true?"A":"B"}{" : "}<img src={A_turn!==true?applepic:orangepic} alt=""></img><br></br>your move</p></div> */}
+    <div className='tellmove'><p>{A_turn!==true?"A":"B"}{" : "}<img src={A_turn!==true?applepic:orangepic} alt=""></img><br></br>your move</p></div>
     <div className='grid'>
   <div className="griditems" onClick={()=>addappleororange(0)}>{array[0]!==null?<img src={array[0]} alt="" />:""}</div>
   <div className="griditems" onClick={()=>addappleororange(1)}>{array[1]!==null?<img src={array[1]} alt="" />:""}</div>
